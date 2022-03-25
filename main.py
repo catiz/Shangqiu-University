@@ -25,7 +25,7 @@ def post():
 
 def img():
     bk_img = cv2.imread(r"/www/wwwroot/1647683763900.jpg") # 截图模板图片路径
-    fontpath = r"/www/wwwroot/MiSans-Normal.ttf"    # 设置需要显示的字体
+    fontpath = r"/www/wwwroot/MiSans-Normal.ttf"   # 设置需要显示的字体
     font = ImageFont.truetype(fontpath, 35)
     img_pil = Image.fromarray(bk_img)
     draw = ImageDraw.Draw(img_pil)
