@@ -18,7 +18,6 @@ if __name__ == '__main__':
                                                                                 '"wcjtgjxq":"","wcdq":"","wcdqxxdz":"",'
                                                                                 '"lkdate":"","fhdate":"","zszt":""}'}
     res = requests.post(url=url, data=data)
-
     headers = {'Content-Type': 'application/json'}
     if json.loads(res.text)['message'] == "成功":
         requests.post(
